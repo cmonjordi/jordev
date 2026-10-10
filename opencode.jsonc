@@ -1,0 +1,26 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Formatea con Prettier (el que usa el repo) cada archivo que la IA escriba o edite.
+  "formatter": true,
+  // No despiertan el watcher los artefactos generados.
+  "watcher": {
+    "ignore": [
+      "dist/**",
+      ".astro/**",
+      ".wrangler/**",
+      "node_modules/**",
+      "media/**",
+      "pnpm-lock.yaml",
+    ],
+  },
+  "commands": {
+    "checks": {
+      "description": "Batería de calidad completa (tipos + eslint + prettier + build)",
+      "template": "Ejecuta `pnpm test` y `pnpm build`. Si algo falla, repórtalo con archivo, línea y causa; si todo pasa, dime solo el resumen.",
+    },
+    "deploy": {
+      "description": "Comproma y despliega en Cloudflare Workers",
+      "template": "Revisa con `git status` que no hay cambios sin commit, ejecuta `pnpm deploy` y cuenta la URL resultante. No hagas push sin que yo lo confirme.",
+    },
+  },
+}
