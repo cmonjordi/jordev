@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { site } from '../data/site.ts';
+---
+
+<Layout>
+  <main class="mx-auto flex min-h-dvh max-w-2xl flex-col justify-center px-6 py-16">
+    <p class="text-sm uppercase tracking-widest text-neutral-500">En construcción</p>
+    <h1 class="mt-3 text-4xl font-semibold tracking-tight">{site.name}</h1>
+    <p class="mt-4 text-lg text-neutral-600">
+      El repositorio está listo: Astro, Tailwind, calidad de código, CI y despliegue. La web todavía
+      no.
+    </p>
+    <p class="mt-2 text-sm text-neutral-500">
+      Este marcador de posición se sustituye en cuanto empiece el diseño — ver{' '}
+      <code>docs/backlog.md</code>.
+    </p>
+  </main>
+</Layout>

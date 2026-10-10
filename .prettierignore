@@ -1,0 +1,24 @@
+# build output
+dist/
+.astro/
+.wrangler/
+
+# dependencies
+node_modules/
+
+# lockfiles: formatearlos no aporta y rompe los diffs
+pnpm-lock.yaml
+
+# media de trabajo
+media/
+
+# binaries
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.avif
+*.ico
+*.woff
+*.woff2
+*.mp4

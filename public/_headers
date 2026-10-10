@@ -1,0 +1,7 @@
+# Archivos con hash en el nombre: no cambian nunca, se pueden cachear un año.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# El resto: comprobación corta para que los cambios no se queden pillados en la caché.
+/*
+  Cache-Control: public, max-age=0, must-revalidate

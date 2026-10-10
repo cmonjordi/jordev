@@ -1,0 +1,5 @@
+# Permite que estos paquetes ejecuten scripts de postinstall (pnpm los bloquea por defecto).
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true

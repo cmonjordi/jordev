@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/*
+ * Tokens del sitio.
+ * PENDIENTE: definir paleta, tipografías y radios cuando se diseñe la página.
+ * Todo lo que se declare aquí con @theme está disponible como utilidad de Tailwind
+ * (bg-surface, text-ink, font-display…).
+ */
+@theme {
+  --color-ink: #171717;
+  --color-surface: #ffffff;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
